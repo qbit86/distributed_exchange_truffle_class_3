@@ -12,6 +12,12 @@ cd ~/Documents/GitHub/distributed_exchange_truffle_class_3/assignment_1
 geth --datadir=./chaindata console --rpc --rpccorsdomain "*"
 ```
 
+Expected output:
+```
+INFO [01-14|23:55:53] IPC endpoint opened: \\.\pipe\geth.ipc
+INFO [01-14|23:55:53] HTTP endpoint opened: http://127.0.0.1:8545
+```
+
 ```
 testrpc -m "snake balcony soon muffin leader sting thumb keep live fish pitch renew"
 ```
