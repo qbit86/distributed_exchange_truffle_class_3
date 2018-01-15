@@ -39,3 +39,9 @@ testrpc -m "snake balcony soon muffin leader sting thumb keep live fish pitch re
 ```
 "C:\Program Files\Mist\Mist.exe" --node-datadir="c:\Users\Viktor\AppData\Local\Mist-Rinkeby" --network=rinkeby --syncmode=fast
 ```
+
+```
+SimpleStorage.deployed().then(function(instance){return instance.set(5);});
+...
+SimpleStorage.deployed().then(function(instance){return instance.get.call();}).then(function(value){return value.toNumber()});
+```
