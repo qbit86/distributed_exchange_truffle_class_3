@@ -14,6 +14,7 @@ truffle compile
 ```
 
 ```
+cd /d/Viktor/Projects/distributed_exchange_truffle_class_3/truffle-playground
 truffle develop
 ```
 
