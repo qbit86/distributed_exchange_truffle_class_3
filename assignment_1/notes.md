@@ -9,6 +9,7 @@ geth --datadir=./chaindata init ./genesis.json
 Run private network:
 ```
 cd ~/Documents/GitHub/distributed_exchange_truffle_class_3/assignment_1
+cd /d/Viktor/Projects/distributed_exchange_truffle_class_3/assignment_1
 geth --datadir=./chaindata console --rpc --rpccorsdomain "*"
 ```
 
