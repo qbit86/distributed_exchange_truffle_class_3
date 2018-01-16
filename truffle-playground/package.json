@@ -1,0 +1,18 @@
+{
+  "name": "truffle-playground",
+  "version": "0.1.0",
+  "description": "Playground for Truffle",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "solidity"
+  ],
+  "author": "Viktor T.",
+  "license": "MIT"
+}
