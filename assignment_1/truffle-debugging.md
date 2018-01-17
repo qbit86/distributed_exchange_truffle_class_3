@@ -42,3 +42,33 @@ truffle(develop)> debug 0x5ed833ce36022c2f4e6371455be91e71a140de2fb1cc40e53c2539
 debug(develop:0x5ed833ce...)> q
 ```
 
+---
+
+`truffle.js`:
+```
+module.exports = {
+  networks: {
+    development: {
+      host: "localhost",
+      port: 8545,
+      network_id: "*" // Match any network id
+    }
+  }
+};
+```
+
+В одном окне:
+```
+testrpc
+```
+
+или
+
+```
+testrpc -m "draft grow soda pig drink term clinic oblige debate coin matter orient"
+```
+
+В другом окне:
+```
+truffle test
+```
