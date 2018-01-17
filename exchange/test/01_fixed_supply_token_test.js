@@ -14,4 +14,14 @@ contract('MyToken', function(accounts) {
             assert.equal(balanceAccountOwner.toNumber(), _totalSupply.toNumber(), "Total Amount of tokens is owned by owner");
         });
     });
+
+    it("second account should have no tokens", function () {
+        var _instance;
+        return fixedSupplyToken.deployed().then(function (instance) {
+            _instance = instance;
+            return instance.balanceOf(accounts[1])
+        }).then(function (balance) {
+            assert.equal(balance.toNumber(), 0, "Second account does not own any tokens.")
+        });
+    });
 });
