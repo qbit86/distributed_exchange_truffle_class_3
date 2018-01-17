@@ -59,6 +59,7 @@ module.exports = {
 
 В одном окне:
 ```
+cd /c/Users/Viktor/Documents/GitHub/distributed_exchange_truffle_class_3/exchange
 testrpc
 ```
 
