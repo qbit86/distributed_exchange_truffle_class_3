@@ -62,11 +62,13 @@ module.exports = {
 cd /c/Users/Viktor/Documents/GitHub/distributed_exchange_truffle_class_3/exchange
 testrpc
 ```
-
 или
-
 ```
 testrpc -m "draft grow soda pig drink term clinic oblige debate coin matter orient"
+```
+или
+```
+ganache-cli -m "draft grow soda pig drink term clinic oblige debate coin matter orient"
 ```
 
 В другом окне:
