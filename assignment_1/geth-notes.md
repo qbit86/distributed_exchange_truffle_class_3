@@ -46,3 +46,9 @@ SimpleStorage.deployed().then(function(instance){return instance.set(5);});
 ...
 SimpleStorage.deployed().then(function(instance){return instance.get.call();}).then(function(value){return value.toNumber()});
 ```
+
+```
+geth attach
+...
+> personal.unlockAccount(eth.accounts[0], "Пароль", 15000);
+```
