@@ -38,14 +38,32 @@ window.App = {
 
       accounts = accs;
       account = accounts[0];
-
+      console.log(accounts);
       self.refreshBalance();
+
+      self.getEventsForContract();
     });
+
   },
 
   setStatus: function(message) {
     var status = document.getElementById("status");
     status.innerHTML = message;
+  },
+
+  getEventsForContract: function() {
+    var self = this;
+    MetaCoin.deployed().then(function(instance) {
+      instance.allEvents({fromBlock: 0, toBlock: 'latest'}).watch(function(error, event) {
+        document.getElementById("eventsAll").innerHTML += "<br />"+JSON.stringify(event);
+      });
+      instance.Transfer({_to: account},{fromBlock: 0, toBlock: 'latest'}).watch(function(error, event) {
+        document.getElementById("eventsSpecificAddress").innerHTML += "<br />"+JSON.stringify(event);
+      });
+      instance.Transfer({}, {fromBlock: 0, toBlock: 'latest'}).get(function(error, event) {
+        document.getElementById("eventsGet").innerHTML += "<br />"+JSON.stringify(event);
+      });
+    });
   },
 
   refreshBalance: function() {
@@ -93,9 +111,9 @@ window.addEventListener('load', function() {
     // Use Mist/MetaMask's provider
     window.web3 = new Web3(web3.currentProvider);
   } else {
-    console.warn("No web3 detected. Falling back to http://127.0.0.1:9545. You should remove this fallback when you deploy live, as it's inherently insecure. Consider switching to Metamask for development. More info here: http://truffleframework.com/tutorials/truffle-and-metamask");
+    console.warn("No web3 detected. Falling back to http://localhost:8545. You should remove this fallback when you deploy live, as it's inherently insecure. Consider switching to Metamask for development. More info here: http://truffleframework.com/tutorials/truffle-and-metamask");
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-    window.web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:9545"));
+    window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
   }
 
   App.start();
