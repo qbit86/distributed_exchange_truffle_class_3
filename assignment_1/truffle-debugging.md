@@ -8,6 +8,10 @@ cd simple-storage
 ```
 truffle init
 ```
+или
+```
+truffle unbox webpack
+```
 
 ```
 truffle compile
