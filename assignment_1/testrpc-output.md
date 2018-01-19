@@ -1,3 +1,4 @@
+```
 EthereumJS TestRPC v6.0.3 (ganache-core: 2.0.2)
 
 Available Accounts
@@ -30,3 +31,42 @@ HD Wallet
 ==================
 Mnemonic:      snake balcony soon muffin leader sting thumb keep live fish pitch renew
 Base HD Path:  m/44'/60'/0'/0/{account_index}
+```
+
+---
+
+```
+$ ganache-cli -m "draft grow soda pig drink term clinic oblige debate coin matter orient"
+Ganache CLI v6.0.3 (ganache-core: 2.0.2)
+
+Available Accounts
+==================
+(0) 0xbf2820137bc44810b00c53c2e9a32e7887c8c059
+(1) 0x2db4608a331acdad22060f755edb6ec567d540fa
+(2) 0x46e672c66c6767dbde117e8edea62062c333aded
+(3) 0x74c62c52dad045f83a7b7a4ec6128df9091aa7ca
+(4) 0x926102aff476a5bccddde04eb3627294d094849d
+(5) 0x67ff766293ddf7f4951e97153fabb4a84c6a0867
+(6) 0xaacb98c8277081100cbb1a3fb93c591e7b8501cc
+(7) 0xa463ecd779c722ce4f5e641cdd75d495b6bbe0c3
+(8) 0xf9d46fa5131353e60e4793e8b8e8ce092076f02d
+(9) 0x11d2c6b27b4ee16ccd91fb7bbbfab98a284b81da
+
+Private Keys
+==================
+(0) 6cee292fa3ae6ec089218eae7bd87bf69a09c4e2eb051abf00488ed2e6a3f9ae
+(1) d97400e31a9a675fc9d23e6215e06b1c4369feb64abca579e5066ef2b10b3859
+(2) f5f5d90ed573956005948b042625a8c4b7ddf8080788152ed67858569e4b3541
+(3) 5dd123775d964fb41b913e52a4c6ed30ba09269b43a44c4f3bb88acb9aae90a2
+(4) 7a30868843559c7547c17844edd67f863430745262286ca6537a0350272be466
+(5) b5e56f2118402d95833bc5710db738a0b0470b8839bb4547494768aaa83ca570
+(6) 635c1c5294d4eafce5e1e2ff2524673641e130029eacbfdf04b5519cb40c37d6
+(7) a82fc2008156c1c5dc76ea3df90147a06c5fbc3a4a2b9e7774558ae4bb8dc180
+(8) fd41cc52998ea08c7249905c9bc1214fb42c762167af8387de11518910a83caf
+(9) a22f49f94f6d9eb2276374ba50a8f070f8507b444ebb4217bd00f0350ba902c8
+
+HD Wallet
+==================
+Mnemonic:      draft grow soda pig drink term clinic oblige debate coin matter orient
+Base HD Path:  m/44'/60'/0'/0/{account_index}
+```
