@@ -76,17 +76,21 @@ ganache-cli -m "draft grow soda pig drink term clinic oblige debate coin matter 
 truffle test
 ```
 
----
-
 ### Webpack
 
+В трёх окнах:
+
 ```
-truffle develop
-...
-compile
-migrate
+ganache-cli -m "draft grow soda pig drink term clinic oblige debate coin matter orient"
+```
+
+```
+truffle migrate
 ```
 
 ```
 npm run dev
 ```
+
+---
+
