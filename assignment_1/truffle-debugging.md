@@ -98,3 +98,6 @@ npm run dev
 
 ---
 
+```
+truffle migrate --network rinkeby
+```
