@@ -52,3 +52,7 @@ geth attach
 ...
 > personal.unlockAccount(eth.accounts[0], "Пароль", 15000);
 ```
+
+```
+geth --datadir="c:\Users\Viktor\AppData\Local\Mist-Rinkeby" --rinkeby --rpc --rpcapi db,eth,net,web3,personal
+```
