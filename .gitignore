@@ -1,4 +1,5 @@
 assignment_1/chaindata/
+bin/
 events-breakout/node_modules/
 exchange/build/
 exchange/node_modules/
