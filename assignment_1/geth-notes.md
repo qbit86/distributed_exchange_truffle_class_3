@@ -6,6 +6,8 @@ cd ~/Documents/GitHub/distributed_exchange_truffle_class_3/assignment_1
 geth --datadir=./chaindata init ./genesis.json
 ```
 
+Положить keystore-файл.
+
 Run private network:
 ```
 cd ~/Documents/GitHub/distributed_exchange_truffle_class_3/assignment_1
@@ -24,7 +26,10 @@ geth --datadir=path/to/custom/data/folder --networkid=15 --bootnodes <bootnode-e
 ```
 
 ```
-geth --nodiscover --rpc --datadir=devChain  --rpccorsdomain "*" --mine --rpcapi "eth,web3,personal,net,miner,admin,debug" --unlock 0x12890d2cce102216644c59daE5baed380d84830c --password "pass.txt" --verbosity 0 console
+geth --nodiscover --rpc --datadir=./ --rpccorsdomain "*" --rpcapi "eth,web3,personal,net,miner,admin,debug"
+```
+```
+geth --nodiscover --rpc --datadir=./ --rpccorsdomain "*" --mine --rpcapi "eth,web3,personal,net,miner,admin,debug" --unlock 0x12890d2cce102216644c59daE5baed380d84830c --password "pass.txt" --verbosity 0 console
 ```
 
 Mining:
@@ -63,6 +68,7 @@ SimpleStorage.deployed().then(function(instance){return instance.get.call();}).t
 geth attach
 ...
 > personal.unlockAccount(eth.accounts[0], "Пароль", 15000);
+> personal.unlockAccount("0x14b9c2a9f1cc5b3b4eab4a89b5461ecf7c5ff63c", "%Пароль%", 15000);
 ```
 
 ```
